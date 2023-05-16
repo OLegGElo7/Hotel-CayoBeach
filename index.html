@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel - CayoBeach</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--header start-->
+    <header class="header">
+      <div class="Hotel__wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo">CayoBeach</div>
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li">
+                <a class="hearder__li-a" href="#">Home</a>
+              </li>
+              <li class="header__li">
+                <a class="hearder__li-a" href="#">Habitaciones</a>
+              </li>
+              <li class="header__li">
+                <a class="hearder__li-a" href="#">Servicios</a>
+              </li>
+              <li class="header__li">
+                <a class="hearder__li-a" href="#">Sobre nosotros</a>
+              </li>
+              <li class="header__li">
+                <a class="hearder__li-a" href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hearder__search">
+            <!--Сделать открывающеяся меню и выбрать нужный html тег-->
+            <img
+              class="hearder__glass"
+              src="magnifying glass.png"
+              alt="magnifying"
+            />
+            <div class="hearder__language">Español</div>
+            <img class="hearder__outline" src="Outline.png" alt="Outline" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+
+    <main>
+      <!--home start-->
+      <section class="home">
+        <div class="Hotel__wrapper">
+          <div class="home__wrapper-title">
+            <h1 class="home__title">
+              "Vive una experiencia única en nuestros eventos multitudinarios"
+            </h1>
+          </div>
+          <div class="home__wrapper-subtitle">
+            <p class="home__subtitle">ver video</p>
+            <button class="home__button">
+              <a href="" class="home__button-a">
+                <img
+                  src="play video.png"
+                  alt="play video"
+                  class="home__button-img"
+                />
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="home__background">
+          <img
+            src="home background.png"
+            alt="background"
+            class="home__background-img"
+          />
+        </div>
+      </section>
+
+      <!--home end-->
+
+      <!--bookingStrip start-->
+      <section class="bookingStrip">
+        <div class="Hotel__wrapper">
+          <form class="bookingStrip__form">
+            <fieldset class="bookingStrip__form-wrapper">
+              <div class="bookingStrip__form-info">
+                <div class="bookingStrip__form-data">
+                  <div class="bookingStrip__form-data-two">
+                    <label>Fecha entrada</label>
+                    <input type="date" name="fecha" id="fecha" />
+                  </div>
+                </div>
+                <hr />
+                <div class="bookingStrip__form-data">
+                  <div class="bookingStrip__form-data-two">
+                    <label>Fecha salida</label>
+                    <input type="date" />
+                  </div>
+                </div>
+
+                <hr />
+                <div class="bookingStrip__form-data-select">
+                  <img
+                    src="/people.png"
+                    alt=""
+                    class="bookingStrop__form-img"
+                  />
+                  <div class="bookingStrip__form-data-wrap">
+                    <label>Cuartos para</label>
+                    <select>
+                      <option value="1 persona">1 persona</option>
+                      <option value="2 personas">2 personas</option>
+                      <option value="3 personas">3 personas</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="bookingStrip__button">
+                  <img
+                    class="bookingStrip__glass"
+                    src="magnifying glass.png"
+                    alt="magnifying"
+                  />
+                  Reservar ahora
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <!--bookingStrip end-->
+
+      <!--events start-->
+      <section class="events">
+        <div class="Hotel__wrapper">
+          <div class="events__title">
+            <h2 class="events__h2">¡Disfruta con nosotros!</h2>
+            <p class="events__p">Realizamos todo tipo de eventos</p>
+          </div>
+          <div class="events__cards">
+            <div class="events__card">
+              <div class="events__img-wrapper">
+                <img
+                  src="/image-tb.png"
+                  alt="image-tb"
+                  class="events__card-img"
+                />
+              </div>
+              <div class="events-wrapper__card-title">
+                <h3 class="events__h3">
+                  en <span class="events__h3-boldfont"> Playa Noreste</span>
+                </h3>
+                <h4 class="events__h4">Tomorrowland Beach</h4>
+                <p class="events__card-p">
+                  Breve descripción del evento que puede ocupara hasta 3 líneas
+                  de texto.
+                </p>
+                <input type="date" name="trip-start" value="2024-06-10" />
+                <button class="events__button">Me interesa</button>
+              </div>
+            </div>
+            <div class="events__card">
+              <div class="events__img-wrapper">
+                <img
+                  src="/image-wt.png"
+                  alt="image-wt"
+                  class="events__card-img"
+                />
+              </div>
+              <div class="events-wrapper__card-title">
+                <h3 class="events__h3">
+                  en <span class="events__h3-boldfont">Playa Sur</span>
+                </h3>
+                <h4 class="events__h4">World Tropical</h4>
+                <p class="events__card-p">
+                  Breve descripción del evento que puede ocupara hasta 3 líneas
+                  de texto.
+                </p>
+                <input type="date" name="trip-start" value="2024-09-10" />
+                <button class="events__button">Me interesa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--events end-->
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
