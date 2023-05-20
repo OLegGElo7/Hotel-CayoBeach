@@ -78,6 +78,12 @@ input:active {
   width: 100%;
   padding: 40px 0px;
 }
+.header__background {
+  background-color: #1b5355;
+  -webkit-box-shadow: -1px -40px 43px -13px rgba(31, 229, 236, 0.21) inset;
+  -moz-box-shadow: -1px -40px 43px -13px rgba(31, 229, 236, 0.21) inset;
+  box-shadow: -1px -40px 43px -13px rgba(31, 229, 236, 0.21) inset;
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -165,12 +171,13 @@ input:active {
   opacity: 0.75;
   transition: 0.8s;
 }
+
 .home__background {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 840px;
   z-index: -1;
 }
 .home__background-img {
@@ -178,6 +185,7 @@ input:active {
   height: 100%;
   object-fit: cover;
 }
+
 /* home end */
 
 /* bookingStrip start */
@@ -339,7 +347,9 @@ input:active {
 
 /* reserve start */
 .reserve {
-  background-image: url(/CTA.png);
+  background-image: url(/img/CTA.png);
+  background-size: cover;
+  background-position: center;
 }
 .reserve__wrapper-title {
   padding-top: 80px;
@@ -410,8 +420,9 @@ input:active {
 }
 .price__wrapper-cards {
   display: grid;
-  grid-template-columns: repeat(3, 341.34px);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
+  row-gap: 20px;
 }
 .price__card-img {
   margin-top: 16px;

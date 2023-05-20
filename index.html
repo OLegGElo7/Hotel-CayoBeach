@@ -17,19 +17,16 @@
           <nav class="header__nav">
             <ul class="header__ul">
               <li class="header__li">
-                <a class="hearder__li-a" href="#">Home</a>
+                <a class="hearder__li-a" href="#home">Home</a>
               </li>
               <li class="header__li">
-                <a class="hearder__li-a" href="#">Habitaciones</a>
+                <a class="hearder__li-a" href="#rooms">Habitaciones</a>
               </li>
               <li class="header__li">
-                <a class="hearder__li-a" href="#">Servicios</a>
+                <a class="hearder__li-a" href="#event">Eventos</a>
               </li>
               <li class="header__li">
-                <a class="hearder__li-a" href="#">Sobre nosotros</a>
-              </li>
-              <li class="header__li">
-                <a class="hearder__li-a" href="#">Contacto</a>
+                <a class="hearder__li-a" href="#contact">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -37,11 +34,15 @@
             <!--Сделать открывающеяся меню и выбрать нужный html тег-->
             <img
               class="hearder__glass"
-              src="magnifying glass.png"
+              src="/img/magnifying glass.png"
               alt="magnifying"
             />
             <div class="hearder__language">Español</div>
-            <img class="hearder__outline" src="Outline.png" alt="Outline" />
+            <img
+              class="hearder__outline"
+              src="/img/Outline.png"
+              alt="Outline"
+            />
           </div>
         </div>
       </div>
@@ -50,7 +51,7 @@
 
     <main>
       <!--home start-->
-      <section class="home">
+      <section class="home" id="home">
         <div class="Hotel__wrapper">
           <div class="home__wrapper-title">
             <h1 class="home__title">
@@ -62,7 +63,7 @@
             <button class="home__button">
               <a href="" class="home__button-a">
                 <img
-                  src="play video.png"
+                  src="/img/play video.png"
                   alt="play video"
                   class="home__button-img"
                 />
@@ -70,9 +71,10 @@
             </button>
           </div>
         </div>
+
         <div class="home__background">
           <img
-            src="home background.png"
+            src="/img/home background.png"
             alt="background"
             class="home__background-img"
           />
@@ -104,7 +106,7 @@
                 <hr />
                 <div class="bookingStrip__form-data-select">
                   <img
-                    src="/people.png"
+                    src="/img/people.png"
                     alt=""
                     class="bookingStrop__form-img"
                   />
@@ -120,7 +122,7 @@
                 <button type="submit" class="bookingStrip__button">
                   <img
                     class="bookingStrip__glass"
-                    src="magnifying glass.png"
+                    src="/img/magnifying glass.png"
                     alt="magnifying"
                   />
                   Reservar ahora
@@ -133,7 +135,7 @@
       <!--bookingStrip end-->
 
       <!--events start-->
-      <section class="events">
+      <section class="events" id="event">
         <div class="Hotel__wrapper">
           <div class="events__title">
             <h2 class="events__h2">¡Disfruta con nosotros!</h2>
@@ -143,7 +145,7 @@
             <div class="events__card-one">
               <div class="events__img-wrapper">
                 <img
-                  src="/image-tb.png"
+                  src="/img/image-tb.png"
                   alt="image-tb"
                   class="events__card-img"
                 />
@@ -176,7 +178,7 @@
               </div>
               <div class="events__img-wrapper">
                 <img
-                  src="/image-wt.png"
+                  src="/img/image-wt.png"
                   alt="image-wt"
                   class="events__card-img"
                 />
@@ -199,7 +201,7 @@
       <!--reserve end-->
 
       <!--price start-->
-      <section class="price">
+      <section class="price" id="rooms">
         <div class="Hotel__wrapper">
           <div class="price__wrapper-title">
             <h6 class="price__h6">Habitaciones de lujo</h6>
@@ -209,11 +211,15 @@
           </div>
           <div class="price__wrapper">
             <button class="price__button-left">
-              <img src="/arrow2.png" alt="" class="price__button-img-left" />
+              <img
+                src="/img/arrow2.png"
+                alt=""
+                class="price__button-img-left"
+              />
             </button>
             <div class="price__wrapper-cards">
               <div class="price__card">
-                <img src="/number1.png" alt="" class="price__card-img" />
+                <img src="/img/number1.png" alt="" class="price__card-img" />
                 <p class="price__card-one-p">Wilderness Club at Big Ceddar</p>
                 <div class="price__title-one">2 Baños</div>
                 <div class="price__title-price">
@@ -222,7 +228,7 @@
                 </div>
               </div>
               <div class="price__card">
-                <img src="/number2.png" alt="" class="price__card-img" />
+                <img src="/img/number2.png" alt="" class="price__card-img" />
                 <p class="price__card-one-p">Wilderness Club at Big Ceddar</p>
                 <div class="price__title-one">1 Baño con jacujacuzzi</div>
                 <div class="price__title-price">
@@ -231,7 +237,7 @@
                 </div>
               </div>
               <div class="price__card">
-                <img src="/number3.png" alt="" class="price__card-img" />
+                <img src="/img/number3.png" alt="" class="price__card-img" />
                 <p class="price__card-one-p">Wilderness Club at Big Ceddar</p>
                 <div class="price__title-one">Habitación matrimonial</div>
                 <div class="price__title-price">
@@ -242,7 +248,7 @@
             </div>
             <button class="price__button-right">
               <img
-                src="/arrow.png"
+                src="/img/arrow.png"
                 alt="arrow"
                 class="price__button-img-right"
               />
@@ -251,70 +257,68 @@
         </div>
       </section>
       <!--price end-->
-
-      <!--footer start-->
-      <footer class="footer">
-        <div class="Hotel__wrapper">
-          <div class="footer__wrapper-content">
-            <div class="footer__logo-title">
-              <div class="logo">CayoBeach</div>
-              <div class="footer__title">
-                Descripción del hotel. Detalles que los hagan especial
-              </div>
+    </main>
+    <!--footer start-->
+    <footer class="footer" id="contact">
+      <div class="Hotel__wrapper">
+        <div class="footer__wrapper-content">
+          <div class="footer__logo-title">
+            <div class="logo">CayoBeach</div>
+            <div class="footer__title">
+              Descripción del hotel. Detalles que los hagan especial
             </div>
-            <nav class="footer__nav">
-              <ul class="footer__ul">
-                <li class="footer__li"><a href="">Habitaciones</a></li>
-                <li class="footer__li"><a href="">Servicios</a></li>
-                <li class="footer__li"><a href="">Eventos</a></li>
-              </ul>
-            </nav>
           </div>
-          <div class="footer__contacts">
-            <div class="footer__contact">
-              © Logo Hotel 2023. Derechos reservados
-            </div>
-            <div class="footer__contact-socialMedia">
-              <div class="footer__contact-search">Encuentranos en:</div>
-              <div class="footer__contact-links">
-                <a
-                  href="https://ru-ru.facebook.com/"
-                  class="footer__contact-facebook"
-                >
-                  <img
-                    src="/facebook.png"
-                    alt="facebook"
-                    class="footer__facebook-img"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/"
-                  class="footer__contact-instagram"
-                >
-                  <img
-                    src="/inst.png"
-                    alt="instagram"
-                    class="footer__instagram-img"
-                  />
-                </a>
-                <a
-                  href="https://twitter.com/?lang=ru"
-                  class="footer__contact-twitter"
-                >
-                  <img
-                    src="/twit.png"
-                    alt="twitter"
-                    class="footer__twitter-img"
-                  />
-                </a>
-              </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li"><a href="#home">Home</a></li>
+              <li class="footer__li"><a href="#rooms">Habitaciones</a></li>
+              <li class="footer__li"><a href="#event">Eventos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contact">
+            © Logo Hotel 2023. Derechos reservados
+          </div>
+          <div class="footer__contact-socialMedia">
+            <div class="footer__contact-search">Encuentranos en:</div>
+            <div class="footer__contact-links">
+              <a
+                href="https://ru-ru.facebook.com/"
+                class="footer__contact-facebook"
+              >
+                <img
+                  src="/img/facebook.png"
+                  alt="facebook"
+                  class="footer__facebook-img"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                class="footer__contact-instagram"
+              >
+                <img
+                  src="/img/inst.png"
+                  alt="instagram"
+                  class="footer__instagram-img"
+                />
+              </a>
+              <a
+                href="https://twitter.com/?lang=ru"
+                class="footer__contact-twitter"
+              >
+                <img
+                  src="/img/twit.png"
+                  alt="twitter"
+                  class="footer__twitter-img"
+                />
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-      <!--footer end-->
-    </main>
-
-    <footer></footer>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script src="/js/index.js"></script>
   </body>
 </html>
