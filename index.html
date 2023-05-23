@@ -31,12 +31,24 @@
             </ul>
           </nav>
           <div class="hearder__search">
-            <!--Сделать открывающеяся меню и выбрать нужный html тег-->
-            <img
-              class="hearder__glass"
-              src="/img/magnifying glass.png"
-              alt="magnifying"
-            />
+            <div class="header__search-glass">
+              <input
+                name=""
+                type="text"
+                placeholder="Buscar..."
+                class="headaer__input-glass"
+              />
+              <a href="#" class="header__glass-btn">
+                <img
+                  class="hearder__glass"
+                  src="/img/magnifying glass.png"
+                  alt="magnifying"
+                />
+              </a>
+            </div>
+            <!--надо опцию выбора языка-->
+            <!--когда выбираешь в опции язык, через джс меняется 
+            названия языка + весь текст на сайте-->
             <div class="hearder__language">Español</div>
             <img
               class="hearder__outline"
@@ -160,7 +172,9 @@
                   de texto.
                 </p>
                 <input type="date" name="trip-start" value="2024-06-10" />
-                <button class="events__button">Me interesa</button>
+                <button class="events__button">
+                  <a href="/tb.html" target="_blank">Me interesa</a>
+                </button>
               </div>
             </div>
             <div class="events__card-two">
@@ -174,7 +188,9 @@
                   de texto.
                 </p>
                 <input type="date" name="trip-start" value="2024-09-10" />
-                <button class="events__button">Me interesa</button>
+                <button class="events__button">
+                  <a href="/wt.html" target="_blank">Me interesa</a>
+                </button>
               </div>
               <div class="events__img-wrapper">
                 <img
@@ -194,7 +210,9 @@
         <div class="Hotel__wrapper">
           <div class="reserve__wrapper-title">
             <h5 class="reserve__h5">Una super experiencia para contar</h5>
-            <button class="reserve__button">Reservar ahora</button>
+            <button class="reserve__button">
+              <a href="#reserve">Reservar ahora</a>
+            </button>
           </div>
         </div>
       </section>
@@ -286,6 +304,7 @@
               <a
                 href="https://ru-ru.facebook.com/"
                 class="footer__contact-facebook"
+                target="_blank"
               >
                 <img
                   src="/img/facebook.png"
@@ -296,6 +315,7 @@
               <a
                 href="https://www.instagram.com/"
                 class="footer__contact-instagram"
+                target="_blank"
               >
                 <img
                   src="/img/inst.png"
@@ -306,6 +326,7 @@
               <a
                 href="https://twitter.com/?lang=ru"
                 class="footer__contact-twitter"
+                target="_blank"
               >
                 <img
                   src="/img/twit.png"
