@@ -142,6 +142,15 @@ input:active {
   margin-right: 4px;
   color: #ffffff;
 }
+.headaer__language-select {
+  background: none;
+  border: 0;
+  color: #ffffff;
+}
+.headaer__language-option {
+  background-color: #1b53557e;
+  color: #ffffff;
+}
 .header__button-glass {
   border: 0;
   background-color: #00000000;
@@ -161,7 +170,7 @@ input:active {
 }
 .home__title {
   max-width: 720px;
-  max-height: 210px;
+  min-height: 210px;
   font-weight: 700;
   font-size: 56px;
   line-height: 125%;
@@ -313,11 +322,18 @@ input:active {
   transition: 0.8s;
 }
 .events__h3 {
+  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   color: #1a759f;
   margin-bottom: 4px;
+}
+.lang-in {
+  margin-right: 5px;
+}
+.lang-intwo {
+  margin-right: 5px;
 }
 .events__h3-boldfont {
   font-weight: 700;
@@ -569,6 +585,8 @@ input:active {
   line-height: 125%;
   color: #4d4d4d;
   margin-right: 16px;
+  display: flex;
+  align-items: center;
 }
 .footer__contact-facebook :hover,
 .footer__contact-facebook :focus,

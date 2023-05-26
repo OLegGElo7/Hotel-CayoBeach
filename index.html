@@ -17,16 +17,20 @@
           <nav class="header__nav">
             <ul class="header__ul">
               <li class="header__li">
-                <a class="hearder__li-a" href="#home">Home</a>
+                <a class="hearder__li-a lang-main" href="#home">Home</a>
               </li>
               <li class="header__li">
-                <a class="hearder__li-a" href="#rooms">Habitaciones</a>
+                <a class="hearder__li-a lang-rooms" href="#rooms"
+                  >Habitaciones</a
+                >
               </li>
               <li class="header__li">
-                <a class="hearder__li-a" href="#event">Eventos</a>
+                <a class="hearder__li-a lang-event" href="#event">Eventos</a>
               </li>
               <li class="header__li">
-                <a class="hearder__li-a" href="#contact">Contacto</a>
+                <a class="hearder__li-a lang-contact" href="#contact"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </nav>
@@ -35,7 +39,7 @@
               <input
                 name=""
                 type="text"
-                placeholder="Buscar..."
+                placeholder="Look for..."
                 class="headaer__input-glass"
               />
               <a href="#" class="header__glass-btn">
@@ -46,15 +50,20 @@
                 />
               </a>
             </div>
-            <!--надо опцию выбора языка-->
-            <!--когда выбираешь в опции язык, через джс меняется 
-            названия языка + весь текст на сайте-->
-            <div class="hearder__language">Español</div>
-            <img
-              class="hearder__outline"
-              src="/img/Outline.png"
-              alt="Outline"
-            />
+
+            <div class="hearder__language">
+              <select class="headaer__language-select">
+                <option class="headaer__language-option" value="es">
+                  Español
+                </option>
+                <option class="headaer__language-option" value="en">
+                  English
+                </option>
+                <option class="headaer__language-option" value="ru">
+                  Русский
+                </option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -66,12 +75,12 @@
       <section class="home" id="home">
         <div class="Hotel__wrapper">
           <div class="home__wrapper-title">
-            <h1 class="home__title">
+            <h1 class="home__title lang-home">
               "Vive una experiencia única en nuestros eventos multitudinarios"
             </h1>
           </div>
           <div class="home__wrapper-subtitle">
-            <p class="home__subtitle">ver video</p>
+            <p class="home__subtitle lang-video">ver video</p>
             <button class="home__button">
               <a href="" class="home__button-a">
                 <img
@@ -103,14 +112,14 @@
               <div class="bookingStrip__form-info">
                 <div class="bookingStrip__form-data">
                   <div class="bookingStrip__form-data-two">
-                    <label>Fecha entrada</label>
+                    <label class="lang-dataArrival">Fecha entrada</label>
                     <input type="date" name="fecha" id="fecha" />
                   </div>
                 </div>
                 <hr />
                 <div class="bookingStrip__form-data">
                   <div class="bookingStrip__form-data-two">
-                    <label>Fecha salida</label>
+                    <label class="lang-dataDeparture">Fecha salida</label>
                     <input type="date" />
                   </div>
                 </div>
@@ -123,15 +132,21 @@
                     class="bookingStrop__form-img"
                   />
                   <div class="bookingStrip__form-data-wrap">
-                    <label>Cuartos para</label>
+                    <label class="lang-roomsFor">Cuartos para</label>
                     <select>
-                      <option value="1 persona">1 persona</option>
-                      <option value="2 personas">2 personas</option>
-                      <option value="3 personas">3 personas</option>
+                      <option class="lang-personOne" value="1 persona">
+                        1 persona
+                      </option>
+                      <option class="lang-personTwo" value="2 personas">
+                        2 personas
+                      </option>
+                      <option class="lang-personThree" value="3 personas">
+                        3 personas
+                      </option>
                     </select>
                   </div>
                 </div>
-                <button type="submit" class="bookingStrip__button">
+                <button type="submit" class="bookingStrip__button lang-reserve">
                   <img
                     class="bookingStrip__glass"
                     src="/img/magnifying glass.png"
@@ -150,8 +165,10 @@
       <section class="events" id="event">
         <div class="Hotel__wrapper">
           <div class="events__title">
-            <h2 class="events__h2">¡Disfruta con nosotros!</h2>
-            <p class="events__p">Realizamos todo tipo de eventos</p>
+            <h2 class="events__h2 lang-enjoy">¡Disfruta con nosotros!</h2>
+            <p class="events__p lang-kindsEvents">
+              Realizamos todo tipo de eventos
+            </p>
           </div>
           <div class="events__cards">
             <div class="events__card-one">
@@ -164,32 +181,45 @@
               </div>
               <div class="events-wrapper__card-title">
                 <h3 class="events__h3">
-                  en <span class="events__h3-boldfont"> Playa Noreste</span>
+                  <div class="lang-in">en</div>
+
+                  <span class="events__h3-boldfont lang-northeastBeach">
+                    Playa Noreste</span
+                  >
                 </h3>
-                <h4 class="events__h4">Tomorrowland Beach</h4>
-                <p class="events__card-p">
+                <h4 class="events__h4 lang-tomorrowlandBeach">
+                  Tomorrowland Beach
+                </h4>
+                <p class="events__card-p lang-text">
                   Breve descripción del evento que puede ocupara hasta 3 líneas
                   de texto.
                 </p>
                 <input type="date" name="trip-start" value="2024-06-10" />
                 <button class="events__button">
-                  <a href="/tb.html" target="_blank">Me interesa</a>
+                  <a class="lang-interested" href="/tb.html" target="_blank"
+                    >Me interesa</a
+                  >
                 </button>
               </div>
             </div>
             <div class="events__card-two">
               <div class="events-wrapper__card-title">
                 <h3 class="events__h3">
-                  en <span class="events__h3-boldfont">Playa Sur</span>
+                  <div class="lang-intwo">en</div>
+                  <span class="events__h3-boldfont lang-southBeach"
+                    >Playa Sur</span
+                  >
                 </h3>
-                <h4 class="events__h4">World Tropical</h4>
-                <p class="events__card-p">
+                <h4 class="events__h4 lang-worldTropical">World Tropical</h4>
+                <p class="events__card-p lang-textTwo">
                   Breve descripción del evento que puede ocupara hasta 3 líneas
                   de texto.
                 </p>
                 <input type="date" name="trip-start" value="2024-09-10" />
                 <button class="events__button">
-                  <a href="/wt.html" target="_blank">Me interesa</a>
+                  <a class="lang-interestedTwo" href="/wt.html" target="_blank"
+                    >Me interesa</a
+                  >
                 </button>
               </div>
               <div class="events__img-wrapper">
@@ -209,8 +239,10 @@
       <section class="reserve">
         <div class="Hotel__wrapper">
           <div class="reserve__wrapper-title">
-            <h5 class="reserve__h5">Una super experiencia para contar</h5>
-            <button class="reserve__button">
+            <h5 class="reserve__h5 lang-experience">
+              Una super experiencia para contar
+            </h5>
+            <button class="reserve__button lang-reserveTwo">
               <a href="#reserve">Reservar ahora</a>
             </button>
           </div>
@@ -222,8 +254,8 @@
       <section class="price" id="rooms">
         <div class="Hotel__wrapper">
           <div class="price__wrapper-title">
-            <h6 class="price__h6">Habitaciones de lujo</h6>
-            <p class="price__p-title">
+            <h6 class="price__h6 lang-luxury">Habitaciones de lujo</h6>
+            <p class="price__p-title lang-catalog">
               Vea todo nuestro catálogo de habitaciones
             </p>
           </div>
@@ -238,29 +270,39 @@
             <div class="price__wrapper-cards">
               <div class="price__card">
                 <img src="/img/number1.png" alt="" class="price__card-img" />
-                <p class="price__card-one-p">Wilderness Club at Big Ceddar</p>
-                <div class="price__title-one">2 Baños</div>
+                <p class="price__card-one-p lang-Wilderness">
+                  Wilderness Club at Big Ceddar
+                </p>
+                <div class="price__title-one lang-Bathrooms">2 Baños</div>
                 <div class="price__title-price">
                   <div class="price__title-dollar">$816</div>
-                  <div class="price__title-night">/3 night</div>
+                  <div class="price__title-night lang-nigth">/3 night</div>
                 </div>
               </div>
               <div class="price__card">
                 <img src="/img/number2.png" alt="" class="price__card-img" />
-                <p class="price__card-one-p">Wilderness Club at Big Ceddar</p>
-                <div class="price__title-one">1 Baño con jacujacuzzi</div>
+                <p class="price__card-one-p lang-WildernessTwo">
+                  Wilderness Club at Big Ceddar
+                </p>
+                <div class="price__title-one lang-jacuzzi">
+                  1 Baño con jacujacuzzi
+                </div>
                 <div class="price__title-price">
                   <div class="price__title-dollar">$2016</div>
-                  <div class="price__title-night">/6 night</div>
+                  <div class="price__title-night lang-nigthTwo">/6 night</div>
                 </div>
               </div>
               <div class="price__card">
                 <img src="/img/number3.png" alt="" class="price__card-img" />
-                <p class="price__card-one-p">Wilderness Club at Big Ceddar</p>
-                <div class="price__title-one">Habitación matrimonial</div>
+                <p class="price__card-one-p lang-WildernessThree">
+                  Wilderness Club at Big Ceddar
+                </p>
+                <div class="price__title-one lang-Matrimonial">
+                  Habitación matrimonial
+                </div>
                 <div class="price__title-price">
                   <div class="price__title-dollar">$1024</div>
-                  <div class="price__title-night">/8 night</div>
+                  <div class="price__title-night lang-nigthTrhee">/8 night</div>
                 </div>
               </div>
             </div>
@@ -282,24 +324,30 @@
         <div class="footer__wrapper-content">
           <div class="footer__logo-title">
             <div class="logo">CayoBeach</div>
-            <div class="footer__title">
+            <div class="footer__title lang-hotelDescription">
               Descripción del hotel. Detalles que los hagan especial
             </div>
           </div>
           <nav class="footer__nav">
             <ul class="footer__ul">
-              <li class="footer__li"><a href="#home">Home</a></li>
-              <li class="footer__li"><a href="#rooms">Habitaciones</a></li>
-              <li class="footer__li"><a href="#event">Eventos</a></li>
+              <li class="footer__li">
+                <a class="lang-mainTwo" href="#home">Home</a>
+              </li>
+              <li class="footer__li">
+                <a class="lang-roomsTwo" href="#rooms">Habitaciones</a>
+              </li>
+              <li class="footer__li">
+                <a class="lang-eventsTwo" href="#event">Eventos</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="footer__contacts">
-          <div class="footer__contact">
+          <div class="footer__contact lang-logo">
             © Logo Hotel 2023. Derechos reservados
           </div>
           <div class="footer__contact-socialMedia">
-            <div class="footer__contact-search">Encuentranos en:</div>
+            <div class="footer__contact-search lang-Find">Encuentranos en:</div>
             <div class="footer__contact-links">
               <a
                 href="https://ru-ru.facebook.com/"
@@ -340,6 +388,7 @@
       </div>
     </footer>
     <!--footer end-->
+    <script src="/js/lang.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
