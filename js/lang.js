@@ -10,7 +10,7 @@ const arrLang = {
     en: "Rooms",
     ru: "Номера",
   },
-  events: {
+  event: {
     es: "Eventos",
     en: "Events",
     ru: "События",

@@ -10,25 +10,27 @@
   </head>
   <body>
     <!--header start-->
-    <header class="header">
+    <header id="header" class="header">
       <div class="Hotel__wrapper">
         <div class="header__wrapper">
           <div class="logo">CayoBeach</div>
           <nav class="header__nav">
             <ul class="header__ul">
               <li class="header__li">
-                <a class="hearder__li-a lang-main" href="#home">Home</a>
+                <a class="hearder__li-a lang-main scroll" href="#home">Home</a>
               </li>
               <li class="header__li">
-                <a class="hearder__li-a lang-rooms" href="#rooms"
+                <a class="hearder__li-a lang-rooms scroll" href="#rooms"
                   >Habitaciones</a
                 >
               </li>
               <li class="header__li">
-                <a class="hearder__li-a lang-event" href="#event">Eventos</a>
+                <a class="hearder__li-a lang-event scroll" href="#event"
+                  >Eventos</a
+                >
               </li>
               <li class="header__li">
-                <a class="hearder__li-a lang-contact" href="#contact"
+                <a class="hearder__li-a lang-contact scroll" href="#contact"
                   >Contacto</a
                 >
               </li>
@@ -50,7 +52,6 @@
                 />
               </a>
             </div>
-
             <div class="hearder__language">
               <select class="headaer__language-select">
                 <option class="headaer__language-option" value="es">
@@ -72,7 +73,7 @@
 
     <main>
       <!--home start-->
-      <section class="home" id="home">
+      <section class="home dsa" id="home">
         <div class="Hotel__wrapper">
           <div class="home__wrapper-title">
             <h1 class="home__title lang-home">
@@ -81,8 +82,9 @@
           </div>
           <div class="home__wrapper-subtitle">
             <p class="home__subtitle lang-video">ver video</p>
+
             <button class="home__button">
-              <a href="" class="home__button-a">
+              <a href="#popup" class="home__button-a">
                 <img
                   src="/img/play video.png"
                   alt="play video"
@@ -162,7 +164,7 @@
       <!--bookingStrip end-->
 
       <!--events start-->
-      <section class="events" id="event">
+      <section class="events dsa" id="event">
         <div class="Hotel__wrapper">
           <div class="events__title">
             <h2 class="events__h2 lang-enjoy">¡Disfruta con nosotros!</h2>
@@ -331,13 +333,13 @@
           <nav class="footer__nav">
             <ul class="footer__ul">
               <li class="footer__li">
-                <a class="lang-mainTwo" href="#home">Home</a>
+                <a class="lang-mainTwo scroll" href="#home">Home</a>
               </li>
               <li class="footer__li">
-                <a class="lang-roomsTwo" href="#rooms">Habitaciones</a>
+                <a class="lang-roomsTwo scroll" href="#rooms">Habitaciones</a>
               </li>
               <li class="footer__li">
-                <a class="lang-eventsTwo" href="#event">Eventos</a>
+                <a class="lang-eventsTwo scroll" href="#event">Eventos</a>
               </li>
             </ul>
           </nav>
@@ -387,7 +389,25 @@
         </div>
       </div>
     </footer>
+
     <!--footer end-->
+
+    <!--popup start-->
+    <div id="popup" class="popup">
+      <a href="#header" class="popup__area"></a>
+
+      <div class="popup__video">
+        <iframe
+          class="popup__video-elem"
+          src="https://www.youtube.com/embed/e_8jePhQ1VQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!--popup end-->
     <script src="/js/lang.js"></script>
     <script src="/js/index.js"></script>
   </body>

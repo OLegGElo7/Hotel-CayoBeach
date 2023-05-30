@@ -607,3 +607,43 @@ input:active {
   transition: 0.8s;
 }
 /* footer end */
+
+/* popup start */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #00000095;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: hidden;
+}
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__video {
+  max-width: 560px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+.popup__video-elem {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 315px;
+}
+
+/* popup end */
