@@ -1,7 +1,7 @@
 // переменные для скролла
 const header = document.querySelector(".header");
 
-// функциря скролла
+// функциря скролла хедера
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 50) {
     header.classList.add("header__background");
@@ -40,7 +40,7 @@ function changeLang() {
 
 changeLang();
 
-// переменная для скролла
+// переменная для скролла страницы
 const scrolls = document.querySelectorAll(".scroll");
 // функция плавного скролла
 for (let scroll of scrolls) {
@@ -56,3 +56,31 @@ for (let scroll of scrolls) {
     });
   });
 }
+
+//переменные для слайдера
+let offset = 0;
+const slide = document.querySelector(".price__wrap");
+//функция слайдера
+//вперед
+document
+  .querySelector(".price__button-right")
+  .addEventListener("click", function () {
+    console.log("click");
+    offset = offset - 310;
+    if (offset < 0) {
+      offset = 720;
+    }
+    slide.style.left = -offset + "px";
+  });
+//назад
+document
+  .querySelector(".price__button-left")
+  .addEventListener("click", function () {
+    console.log("click2");
+    offset = offset + 310;
+    if (offset > 720) {
+      offset = 0;
+    }
+
+    slide.style.left = -offset + "px";
+  });

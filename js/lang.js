@@ -165,7 +165,22 @@ const arrLang = {
     en: "Wilderness Club at Big Ceddar",
     ru: "Клуб дикой природы в Большом Сиддаре",
   },
+  WildernessFour: {
+    es: "Wilderness Club at Big Ceddar",
+    en: "Wilderness Club at Big Ceddar",
+    ru: "Клуб дикой природы в Большом Сиддаре",
+  },
+  WildernessFive: {
+    es: "Wilderness Club at Big Ceddar",
+    en: "Wilderness Club at Big Ceddar",
+    ru: "Клуб дикой природы в Большом Сиддаре",
+  },
   Bathrooms: {
+    es: "2 Baños",
+    en: "2 bathrooms",
+    ru: "2 ванные комнаты",
+  },
+  BathroomsTwo: {
     es: "2 Baños",
     en: "2 bathrooms",
     ru: "2 ванные комнаты",
@@ -175,7 +190,17 @@ const arrLang = {
     en: "3 night",
     ru: "3 ночей",
   },
+  nigthCope: {
+    es: "3 night",
+    en: "3 night",
+    ru: "3 ночей",
+  },
   nigthTwo: {
+    es: "6 night",
+    en: "6 night",
+    ru: "6 ночей",
+  },
+  nigthTwoCope: {
     es: "6 night",
     en: "6 night",
     ru: "6 ночей",
@@ -186,6 +211,11 @@ const arrLang = {
     ru: "8 ночей",
   },
   jacuzzi: {
+    es: "1 Baño con jacujacuzzi",
+    en: "1 bathroom with jacuzzi",
+    ru: "1 ванная комната с джакузи",
+  },
+  jacuzziTwo: {
     es: "1 Baño con jacujacuzzi",
     en: "1 bathroom with jacuzzi",
     ru: "1 ванная комната с джакузи",
